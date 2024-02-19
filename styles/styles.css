@@ -24,10 +24,6 @@ body {
   background-color: #ffffff;
 }
 
-body a {
-  text-decoration: none;
-}
-
 .page-header {
   line-height: 24px;
 }
@@ -102,17 +98,17 @@ body a {
   background-color: #83b3d333;
 }
 
-.comeToSedona {
+.come-to-sedona {
 }
 
-.comeToSedona h2 {
+.come-to-sedona h2 {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.comeToSedona p {
+.come-to-sedona p {
   color: #333333;
   font-size: 22px;
   font-weight: 400;
@@ -280,13 +276,13 @@ body a {
   background-color: #756157;
 }
 
-.button-favourites{
-background-color: #82B3D3;
+.button-favourites {
+  background-color: #82b3d3;
 }
 
-.pagination-link{
+.pagination-link {
   font-size: 20px;
-font-weight: 700;
-line-height: 36px;
-text-transform: uppercase;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
