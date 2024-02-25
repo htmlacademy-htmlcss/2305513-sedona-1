@@ -138,9 +138,15 @@ body {
   text-align: center;
 }
 
+.main-index {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
 }
 
 .advantages-item {
@@ -151,6 +157,7 @@ body {
 .advantages-items {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   margin: 0;
   padding: 0;
 }
@@ -335,7 +342,6 @@ body {
   color: #ffffff;
   display: flex;
 
-  width: 1200px;
   height: 412px;
   padding: 35px 70px 70px 70px;
 }
@@ -359,6 +365,11 @@ body {
   height: 21px;
 }
 
+.filters-hotels {
+  display: flex;
+  flex-direction: row;
+}
+
 .catalog-filter-group {
   width: 150px;
 }
@@ -376,9 +387,13 @@ body {
   line-height: 23px;
 }
 
-.filter-price{
+.filter-price {
   width: 288;
   height: 160px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
 }
 
 .filter-price-title {
@@ -390,6 +405,25 @@ body {
 
 .filter-btn {
   color: #ffffff;
+}
+
+.hotels {
+}
+
+.sorting-hotels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.product-card {
+  margin: 20px;
 }
 
 .product-card-title {
@@ -432,6 +466,12 @@ body {
 
 .button-favourites {
   background-color: #82b3d3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
 }
 
 .pagination-link {
