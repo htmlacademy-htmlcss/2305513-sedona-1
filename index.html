@@ -25,24 +25,28 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
-              </a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
-              </a>
-            </li>
-          </ul>
         </nav>
-        <a class="navigation-button-link" href="#">Хочу сюда!</a>
+        <div class="user-menu">
+          <nav class="nav-user">
+            <ul class="navigation-user">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link" href="#">
+                  <span class="visually-hidden">
+                    Поиск
+                  </span>
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link" href="#">
+                  <span class="visually-hidden">
+                    Избранное
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="navigation-button-link" href="#">Хочу сюда!</a>
+        </div>
 
       </header>
       <main class="main-index">
@@ -52,7 +56,7 @@
             <img class="main-logo" src="/images/main-img/welcome.svg" width="458" height="352"
               alt="Добро пожаловать в Седону.">
           </div>
-          <h2>Седона — небольшой городок в Аризоне,
+          <h2>Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
@@ -61,7 +65,7 @@
             <li class="advantages-items">
               <div class="advantages-item picture-description">
                 <h3 class="advantages-title">Настоящий городок</h3>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages-item-foto">
                 <img src="/images/main-img/1photo-advantages.jpg" width="800" height="385"
@@ -80,7 +84,7 @@
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="advantages-items-foto">
+            <li class="advantages-items-foto advantages-items">
               <div class="advantages-item section-1">
                 <h3>Мало туристов</h3>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -98,8 +102,8 @@
             </li>
           </ul>
         </section>
-        <div class="comeToSedona">
-          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <div class="come-to-sedona">
+          <h2>Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
           <p>Опытный персонал и качественное обслуживание!</p>
         </div>
         <section class="dignities">
@@ -130,7 +134,7 @@
         </section>
         <section class="search">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-link" href="#">ПОИСК ГОСТИНИЦЫ В Седоне</a>
         </section>
         <section class="subscribe">
@@ -139,6 +143,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="POST">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
+            <label class="visually-hidden" for="newsletter-email">Введите Ваш e-mail</label>
             <button class="button newsletter-button" type="submit">
               Подписаться
             </button>
@@ -146,7 +151,7 @@
         </section>
       </main>
 
-      <footer>
+      <footer class="footer">
         <ul class="social-list">
           <li class="social-items vkontakte">
             <a class="vk-icon" href="https://vk.com/htmlacademy">
