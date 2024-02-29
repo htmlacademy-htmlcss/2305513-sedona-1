@@ -14,6 +14,23 @@
   font-display: swap;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -44,7 +61,6 @@ body {
   display: flex;
   margin: 0 auto;
   line-height: 24px;
-  width: 1060px;
   padding: 0 70px;
   align-items: center;
 }
@@ -52,18 +68,16 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  height: 64px;
 }
 
 .navigation-list {
   display: flex;
   margin: 0;
-  padding: 0;
   width: 340px;
-  height: 64px;
   align-items: center;
   gap: 30px;
-  list-style: none;
+  list-style-type: none;
+  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -85,6 +99,7 @@ body {
   list-style: none;
   align-items: center;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .navigation-button-link {
@@ -94,8 +109,7 @@ body {
   color: #ffffff;
   background-color: #756157;
 
-  width: 160px;
-  height: 36px;
+
   padding: 8px 50px;
   margin-left: 20px;
   margin-top: 14px;
@@ -119,6 +133,7 @@ body {
 .main-logo {
   display: block;
   margin: 0 auto;
+  padding-top: 52px;
 }
 
 .hero h2 {
@@ -127,6 +142,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .hero p {
@@ -136,6 +152,7 @@ body {
   color: #333333;
 
   text-align: center;
+  margin-bottom: 69px;
 }
 
 .main-index {
@@ -146,17 +163,29 @@ body {
 .advantages {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 400px;
   height: 385px;
+  padding: 103px 85px;
 }
 
 .advantages-items {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -167,6 +196,9 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  width: 175px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .advantages-items p {
@@ -174,6 +206,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  text-align: center;
 }
 
 .picture-description {
@@ -221,6 +254,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .dignities-item {
@@ -322,6 +356,12 @@ body {
   padding: 40px 70px 30px 70px;
 }
 
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .footer-contacts-address-phone {
   font-size: 40px;
   font-weight: 400;
@@ -363,11 +403,6 @@ body {
 .breadcrumbs-link {
   width: 73px;
   height: 21px;
-}
-
-.filters-hotels {
-  display: flex;
-  flex-direction: row;
 }
 
 .catalog-filter-group {
