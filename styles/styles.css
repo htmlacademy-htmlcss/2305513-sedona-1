@@ -207,6 +207,10 @@ body {
   padding: 102px 85px;
 }
 
+.advantages-item::before {
+
+}
+
 .advantages-items {
   display: flex;
   flex-direction: row;
@@ -519,6 +523,7 @@ body {
   padding: 0;
   list-style-type: none;
   margin-bottom: 40px;
+  gap: 10px;
 }
 
 .breadcrumbs-link-home {
@@ -721,6 +726,17 @@ body {
   text-align: right;
 }
 
+.card-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.button {
+  border-radius: 4px;
+}
+
 .product-card-button {
   font-size: 16px;
   font-weight: 700;
@@ -729,10 +745,12 @@ body {
   text-decoration: none;
   color: #ffffff;
 
-  display: block;
-  padding: 8px 23px;
+  display: flex;
+  padding: 8px 18px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
 }
 
 .product-card-stars {
@@ -748,6 +766,14 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  width: 140px;
+  height: 37px;
+  flex-shrink: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  text-align: center;
+  padding: 9px 22px 8px 23px;
 }
 
 .card-price {
@@ -777,6 +803,10 @@ body {
 
 .button-favourites {
   background-color: #82b3d3;
+}
+
+.button-active-favourites {
+  background-color: #7db54f;
 }
 
 .pagination {
