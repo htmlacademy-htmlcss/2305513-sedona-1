@@ -54,9 +54,22 @@
             <h1>Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-home visually-hidden" href="index.html">Главная
-                  <img src="./images/catalog-img/house.svg" width="12" height="12" alt="Иконка дом">
+                <a class="breadcrumbs-link breadcrumbs-link-home " href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <path
+                      d="M6.37109 0.5L0.371094 6.30006V12.5001H12.3711V6.30006L6.37109 0.5ZM11.3711 11.5001H1.37109V6.70005L6.37109 1.9L11.3711 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.37109 10.5001H5.37109V8.00005H7.37109V10.5001H8.37109V7.00005H4.37109V10.5001Z"
+                      fill="white" />
+                  </svg>
                 </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
+                  <path
+                    d="M6.78623 4.96875L2.03623 0.71875C1.78623 0.46875 1.28623 0.46875 0.911234 0.71875C0.536234 0.96875 0.661234 1.46875 0.911234 1.71875L5.03623 5.46875L1.03623 9.21875C0.786234 9.46875 0.786234 9.96875 1.03623 10.2188C1.03623 10.3438 1.41123 10.4688 1.53623 10.4688C1.66123 10.4688 1.91123 10.3438 2.03623 10.2188L6.78623 5.96875C7.16123 5.71875 7.16123 5.21875 6.78623 4.96875Z"
+                    fill="white" />
+                </svg>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -142,21 +155,50 @@
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <div class="sorting">
               <span class="social-title">Найдено гостиниц: 38</span>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="cheap">Сначала дорогие</option>
-                <option value="cheap">Популярные</option>
-              </select>
-              <div class="card-format">
-                <a href="#" class="button button-light">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a class="button" href="#">
-                  <span class="visually-hidden">Показать карточки крупно</span>
-                </a>
-                <a class="button" href="#">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
+              <div class="sorting-container">
+                <div class="sorting-type">
+                  <select class="select-control" aria-label="Сортировка">
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="cheap">Сначала дорогие</option>
+                    <option value="cheap">Популярные</option>
+                  </select>
+                </div>
+                <div class="card-format">
+                  <a href="#" class="sorting-button button-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none">
+                      <path d="M4 0H0V6H4V0Z" fill="black" />
+                      <path d="M16 0H12V6H16V0Z" fill="black" />
+                      <path d="M10 0H6V6H10V0Z" fill="black" />
+                      <path d="M4 8H0V14H4V8Z" fill="black" />
+                      <path d="M16 8H12V14H16V8Z" fill="black" />
+                      <path d="M10 8H6V14H10V8Z" fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+                  <a class="sorting-button" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none">
+                      <path d="M16 12H0V14H16V12Z" fill="black" />
+                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Показать карточки крупно</span>
+                  </a>
+                  <a class="sorting-button" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none">
+                      <path d="M2 0H0V2H2V0Z" fill="black" />
+                      <path d="M16 0H4V2H16V0Z" fill="black" />
+                      <path d="M2 4H0V6H2V4Z" fill="black" />
+                      <path d="M16 4H4V6H16V4Z" fill="black" />
+                      <path d="M2 8H0V10H2V8Z" fill="black" />
+                      <path d="M16 8H4V10H16V8Z" fill="black" />
+                      <path d="M2 12H0V14H2V12Z" fill="black" />
+                      <path d="M16 12H4V14H16V12Z" fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -298,18 +340,18 @@
       </main>
       <footer class="footer">
         <ul class="social-list">
-          <li class="social-items vkontakte">
-            <a class="vk-icon" href="https://vk.com/htmlacademy">
+          <li class="social-items ">
+            <a class="social-link footer-social-vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Канал в Vk</span>
             </a>
           </li>
-          <li class="social-items telegram">
-            <a class="tg-icon" href="https://t.me/htmlacademy">
+          <li class="social-items ">
+            <a class="social-link footer-social-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Канал в Telegram</span>
             </a>
           </li>
-          <li class="social-items youtube">
-            <a class="yt-icon" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="social-items ">
+            <a class="social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Канал в Youtube</span>
             </a>
           </li>
