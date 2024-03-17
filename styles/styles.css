@@ -95,7 +95,7 @@ body {
 }
 
 .navigation-link:hover {
-  background-color:;
+  background-color: ;
 }
 
 .navigation-link:focus {
@@ -176,8 +176,16 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 485px;
-
   margin-bottom: 69px;
+}
+
+.hero-background::before {
+  content: "";
+  background-image: url("../images/main-img/main-welcome-ladder.png");
+  position: absolute;
+  bottom: 70px;
+  width: 1200px;
+  height: 57px;
 }
 
 .main-logo {
@@ -471,6 +479,8 @@ body {
   padding: 12px 20px;
   flex: 1 0 0;
   align-self: stretch;
+  border: none;
+  background-color:#F2F2F2;
 }
 
 .newsletter-button {
@@ -480,6 +490,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer {
@@ -631,6 +643,10 @@ body {
   display: flex;
 }
 
+.catalog-filter-group {
+  border-style: none;
+}
+
 .form-filter-catalog {
   display: flex;
   align-items: flex-start;
@@ -700,10 +716,12 @@ body {
 .button-apply {
   background: #82b3d3;
   margin-bottom: 32px;
+  border: none;
 }
 
 .button-reset {
   background: fixed;
+  border: none;
 }
 
 .hotels {
@@ -715,9 +733,6 @@ body {
 }
 
 .sorting-hotels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   align-self: stretch;
   margin-bottom: 40px;
 }
@@ -836,6 +851,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: #000000;
 }
 
 .product-card-habitat {
@@ -862,21 +878,84 @@ body {
   border-radius: 4px;
 }
 
-/* .button:default {
-  color: #FFFFFF;
+.button-brown:default {
+  background-color: #756157;
+  color: #ffffff;
 }
 
-.button:hover {
-
+.button-brown:hover {
+  background-color: #615048;
+  color: #ffffff;
 }
 
-.button:focus {
-
+.button-brown:focus {
+  background-color: #615048;
+  color: #ffffff;
 }
 
-.button:active {
+.button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
-} */
+.button-blue:default {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background-color: #68a2ca;
+  color: #ffffff;
+}
+
+.button-blue:focus {
+  background-color: #68a2ca;
+  color: #ffffff;
+}
+
+.button-blue:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green:default {
+  background-color: #7db54f;
+  color: #ffffff;
+}
+
+.button-green:hover {
+  background-color: #6c9e42;
+  color: #ffffff;
+}
+
+.button-green:focus {
+  background-color: #6c9e42;
+  color: #ffffff;
+}
+
+.button-green:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-transparent:default {
+  color: #ffffff;
+}
+
+.button-transparent:hover {
+  opacity: 0.6;
+  color: #ffffff;
+}
+
+.button-transparent:focus {
+  border: 3px solid #83b3d3;
+  color: #ffffff;
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .product-card-button {
   font-size: 16px;
   font-weight: 700;
@@ -995,6 +1074,11 @@ body {
 .pagination-item:active {
   border-radius: 4px;
   background: var(--Buttons-second, #82b3d3);
+}
+
+.pagination-item:disabled {
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .pagination-link {
