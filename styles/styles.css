@@ -74,7 +74,6 @@ body {
 .navigation-list {
   display: flex;
   margin: 0;
-  height: 64px;
   align-items: center;
   gap: 30px;
   list-style-type: none;
@@ -95,7 +94,7 @@ body {
 }
 
 .navigation-link:hover {
-  background-color: ;
+  background-color:;
 }
 
 .navigation-link:focus {
@@ -481,7 +480,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
   border: none;
-  background-color:#F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .newsletter-button {
@@ -681,8 +680,6 @@ body {
 
 .filter-price {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .filter-price-price {
@@ -760,7 +757,7 @@ body {
 
 .select-control {
   width: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -807,22 +804,22 @@ body {
 
 .sorting-button:default {
   border-radius: 4px;
-  border: 2px solid var(--Forms-elements-1, #e5e5e5);
+  border: 2px solid #e5e5e5;
 }
 
 .sorting-button:hover {
   border-radius: 4px;
-  border: 2px solid var(--Icons-basic, #000);
+  border: 2px solid #000000;
 }
 
 .sorting-button:focus {
   border-radius: 4px;
-  border: 2px solid var(--Icons-second-hover, #68a2ca);
+  border: 2px solid #68a2ca;
 }
 
 .sorting-button:active {
   border-radius: 4px;
-  border: 2px solid var(--Icons-basic, #000);
+  border: 2px solid #000000;
 }
 
 .product-list {
