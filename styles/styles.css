@@ -94,7 +94,7 @@ body {
 }
 
 .navigation-link:hover {
-  background-color:;
+  color: #5e5e5e;
 }
 
 .navigation-link:focus {
@@ -232,6 +232,11 @@ body {
   align-items: center;
   width: 400px;
   padding: 102px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-items:nth-child(3n){
+  background-color: rgba(131, 179, 211, 0.20);
 }
 
 .advantages-item:last-child {
@@ -299,14 +304,6 @@ body {
   color: #ffffff;
 }
 
-.section-1 {
-  background-color: #83b3d31f;
-}
-
-.section-2 {
-  background-color: #83b3d333;
-}
-
 .come-to-sedona {
   display: flex;
   padding: 64px 0;
@@ -337,6 +334,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .dignities-item {
@@ -349,6 +347,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+
+.dignities-item:nth-child(2n){
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .dignities-item h3 {
@@ -365,10 +367,6 @@ body {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-}
-
-.background-section-dignities {
-  background-color: #83b3d31f;
 }
 
 .search {
@@ -504,14 +502,15 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 142px;
 }
 
 .social-link {
   display: flex;
-  width: 56px;
   height: 44px;
   padding: 0 10px;
   background-repeat: no-repeat;
