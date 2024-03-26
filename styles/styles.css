@@ -648,6 +648,9 @@ body {
 
 .filter-body {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
 .catalog-filter-group {
@@ -698,6 +701,38 @@ body {
   gap: 36px;
 }
 
+.price-controll {
+  display: flex;
+  align-items: flex-start;
+}
+
+.filter-price-controll label {
+  position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter-price-boundaries input {
+  display: flex;
+  width: 143px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.price-boundaries-left input {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-boundaries-right input {
+  border-radius: 0 4px 4px 0;
+}
+
 .filter-price-controll span {
   position: absolute;
   content: "от";
@@ -717,6 +752,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  border-style: none;
+  margin: 0;
 }
 
 .range-scale {
@@ -755,7 +792,7 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  /* left: -10px; */
 }
 
 .toggle-max {
