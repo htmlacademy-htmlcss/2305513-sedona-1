@@ -208,6 +208,31 @@
           </svg>
         </a>
       </footer>
+
+      <div class="modal-container ">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-content-field ">
+                <label class="field-group-label" for="date-start">Дата Заезда:</label>
+                <div class="field-group-input">
+                  <input id="date-start" class="input input-date" type="text" name="date-start"
+                    placeholder="Укажите дату" value="27 апреля 2020">
+                  <span class="alert alert-error">
+                    Мы не можем отправить вас в прошлое.
+                  </span>
+                </div>
+              </div>
+
+            </form>
+          </section>
+        </div>
+      </div>
+
     </div>
   </body>
 
