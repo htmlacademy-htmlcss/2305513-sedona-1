@@ -218,16 +218,39 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-content-field ">
-                <label class="field-group-label" for="date-start">Дата Заезда:</label>
-                <div class="field-group-input">
-                  <input id="date-start" class="input input-date" type="text" name="date-start"
-                    placeholder="Укажите дату" value="27 апреля 2020">
-                  <span class="alert alert-error">
-                    Мы не можем отправить вас в прошлое.
-                  </span>
+                <div class="modal-content-date">
+                  <label class="field-group-label" for="date-start">Дата Заезда:</label>
+                  <div class="field-group-input">
+                    <input id="date-start" class="input input-date" type="text" name="date-start"
+                      placeholder="Укажите дату" value="27 апреля 2020">
+                  </div>
                 </div>
-              </div>
+                <!-- <span class="alert alert-error">
+                    Мы не можем отправить вас в прошлое.
+                  </span> -->
 
+                <div class="modal-content-date">
+                  <label class="field-group-label" for="date-end">Дата выезда:</label>
+                  <div class="field-group-input">
+                    <input id="date-end" class="input input-date" type="text" name="date-end" placeholder="Укажите дату"
+                      value="1 сентября 2023">
+                  </div>
+                </div>
+                <!-- <span class="alert alert-error">
+                      На эти даты есть свободные номера. Пока есть.
+                    </span> -->
+                <div class="number-people">
+                  <div class="adults">
+                    <label class="number-adults" for="adults">Взрослые:</label>
+                    <input class="input-adults" id="adults" type="number" value="2" />
+                  </div>
+                  <div class="children">
+                    <label class="number-children" for="children">Дети:</label>
+                    <input class="input-children" id="children" type="number" value="2" />
+                  </div>
+                </div>
+                <button class="modal-button-find">Найти</button>
+              </div>
             </form>
           </section>
         </div>
