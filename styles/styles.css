@@ -1097,6 +1097,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1130,6 +1131,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 }
 
 .control-mark-radio {
@@ -1318,7 +1320,8 @@ input::-webkit-inner-spin-button {
 
 .button-reset {
   background: fixed;
-  border: none;
+  border-radius: 4px;
+  border: solid 3px rgba(255, 255, 255, 0);
 }
 
 .hotels {
@@ -1355,7 +1358,7 @@ input::-webkit-inner-spin-button {
 }
 
 .select-control {
-  width: 100%;
+  width: 292px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1387,6 +1390,7 @@ input::-webkit-inner-spin-button {
   padding: 16px;
   color: #000000;
   height: 44px;
+  gap: 8px;
 }
 
 .sorting-button {
@@ -1399,6 +1403,9 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  border-radius: 4px;
+  border: 2px solid #e5e5e5;
 }
 
 .sorting-button:default {
@@ -1438,6 +1445,9 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
 }
 
 .product-card-link {
@@ -1473,6 +1483,7 @@ input::-webkit-inner-spin-button {
 
 .button {
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-brown:default {
@@ -1656,24 +1667,24 @@ input::-webkit-inner-spin-button {
 
 .pagination-item:default {
   border-radius: 4px;
-  background: var(--Buttons-second, #82b3d3);
+  background: #82b3d3;
 }
 
 .pagination-item:hover {
   border-radius: 4px;
-  border: 1px solid var(--Buttons-second, #82b3d3);
-  background: var(--Buttons-blue-hover, #68a2ca);
+  border: 1px solid #82b3d3;
+  background: #68a2ca;
 }
 
 .pagination-item:focus {
   border-radius: 4px;
-  border: 1px solid var(--Buttons-second, #82b3d3);
-  background: var(--Buttons-blue-hover, #68a2ca);
+  border: 1px solid #82b3d3;
+  background: #68a2ca;
 }
 
 .pagination-item:active {
   border-radius: 4px;
-  background: var(--Buttons-second, #82b3d3);
+  background: #82b3d3;
 }
 
 .pagination-item:disabled {
