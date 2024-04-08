@@ -1010,18 +1010,34 @@ body {
   padding: 0;
   list-style-type: none;
   margin-bottom: 40px;
-  gap: 10px;
   justify-content: center;
+  align-items: center;
+  height: 21px;
+}
+
+.breadcrumbs-item {
+  display: flex;
   align-items: center;
 }
 
-/* .breadcrumbs-item + .breadcrumbs-item {
-  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
-  <path
-  d="M6.78623 4.96875L2.03623 0.71875C1.78623 0.46875 1.28623 0.46875 0.911234 0.71875C0.536234 0.96875 0.661234 1.46875 0.911234 1.71875L5.03623 5.46875L1.03623 9.21875C0.786234 9.46875 0.786234 9.96875 1.03623 10.2188C1.03623 10.3438 1.41123 10.4688 1.53623 10.4688C1.66123 10.4688 1.91123 10.3438 2.03623 10.2188L6.78623 5.96875C7.16123 5.71875 7.16123 5.21875 6.78623 4.96875Z"
-  fill="white" />
-  </svg>
-} */
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 21px;
+  width: 8px;
+  margin: 0 11px;
+  bottom: -1px;
+  background-image: url(../images/catalog-img/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
 
 .breadcrumbs-link-home {
   width: 12px;
@@ -1058,6 +1074,8 @@ body {
 
 .catalog-filter-group {
   border-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form-filter-catalog {
@@ -1093,6 +1111,8 @@ body {
   margin-bottom: 32px;
 }
 
+/* Поменять классы контрол марк на контрол тайтл */
+
 .control-checkbox {
   display: flex;
   align-items: center;
@@ -1100,7 +1120,8 @@ body {
   cursor: pointer;
 }
 
-.control-mark {
+.control-title::after {
+  content: "";
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -1108,15 +1129,15 @@ body {
   position: relative;
 }
 
-.control-checkbox:hover .control-mark {
+.control-checkbox:hover .control-title {
   opacity: 0.6;
 }
 
-.control-checkbox:active .control-mark {
+.control-checkbox:active .control-title {
   opacity: 0.3;
 }
 
-.checkbox:checked + .control-mark::before {
+.checkbox:checked + .control-title::before {
   position: absolute;
   content: "";
   background-image: url(../images/catalog-img/control-checkbox.svg);
@@ -1316,12 +1337,21 @@ input::-webkit-inner-spin-button {
   background: #82b3d3;
   margin-bottom: 32px;
   border: none;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .button-reset {
   background: fixed;
   border-radius: 4px;
   border: solid 3px rgba(255, 255, 255, 0);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .hotels {
@@ -1387,7 +1417,7 @@ input::-webkit-inner-spin-button {
   justify-content: flex-end;
   align-items: center;
 
-  padding: 16px;
+  padding: 16px 0;
   color: #000000;
   height: 44px;
   gap: 8px;
@@ -1428,11 +1458,15 @@ input::-webkit-inner-spin-button {
   border: 2px solid #000000;
 }
 
+.sorting-button-active {
+  border: 2px solid #000000;
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-
+  align-items: start;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1455,6 +1489,7 @@ input::-webkit-inner-spin-button {
 }
 
 .product-card-title {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -1573,7 +1608,7 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
 
   display: flex;
-  padding: 8px 18px;
+  padding: 8px 17px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1665,6 +1700,32 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
+.pagination-item-disabled {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 11px 0 12px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 11px 0 12px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
 .pagination-item:default {
   border-radius: 4px;
   background: #82b3d3;
@@ -1698,5 +1759,5 @@ input::-webkit-inner-spin-button {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: inherit;
 }
