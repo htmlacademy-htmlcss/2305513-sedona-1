@@ -1120,12 +1120,20 @@ body {
   cursor: pointer;
 }
 
-.control-title::after {
+.control-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  display: flex;
+}
+
+.control-title::before {
   content: "";
   width: 20px;
   height: 20px;
   border-radius: 4px;
   background-color: #fff;
+  margin-right: 16px;
   position: relative;
 }
 
@@ -1138,8 +1146,9 @@ body {
 }
 
 .checkbox:checked + .control-title::before {
-  position: absolute;
+  position: relative;
   content: "";
+  margin-right: 16px;
   background-image: url(../images/catalog-img/control-checkbox.svg);
   width: 20px;
   height: 20px;
@@ -1151,29 +1160,40 @@ body {
 .control-radio {
   display: flex;
   align-items: center;
-  gap: 16px;
   cursor: pointer;
 }
 
 .control-mark-radio {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.control-mark-radio::before {
+  content: "";
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #fff;
   position: relative;
+  margin-right: 16px;
 }
 
-.control-input + .control-mark-radio {
+.control-radio + .control-mark-radio {
   border-radius: 50%;
+  margin-right: 16px;
 }
 
 .control-input:checked + .control-mark-radio::before {
-  position: absolute;
   content: "";
+  position: relative;
   background-image: url(../images/catalog-img/tick.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
+  margin-right: 16px;
 }
 
 .control-radio:hover .control-mark-radio {
@@ -1182,13 +1202,6 @@ body {
 
 .control-radio:active .control-mark-radio {
   opacity: 0.3;
-}
-
-.control-title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-  display: flex;
 }
 
 .filter-price {
