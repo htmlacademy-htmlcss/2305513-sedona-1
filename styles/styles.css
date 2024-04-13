@@ -379,7 +379,7 @@ body {
   width: 400px;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -491,6 +491,8 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -513,7 +515,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-
+  font-family: "PT Sans", sans-serif;
   display: flex;
   padding: 12px 20px;
   flex: 1 0 0;
@@ -532,13 +534,14 @@ body {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   cursor: pointer;
+  font-family: "PT Sans", sans-serif;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px 70px;
+  padding: 42px 70px 30px 70px;
 }
 
 .social-list {
@@ -552,6 +555,7 @@ body {
 
 .social-link {
   display: flex;
+  width: 47px;
   height: 44px;
   padding: 0 10px;
   background-repeat: no-repeat;
@@ -597,6 +601,7 @@ body {
 }
 
 .link-htmlacademy {
+  display: flex;
   margin: 0;
   color: #000000;
 }
@@ -729,14 +734,13 @@ body {
   border-radius: 4px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-.modal-content-date .input-date {
-  background-image: url("../images/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center right 20px;
-  padding-right: 60px;
-  /* opacity: 0.3; */
+.input-date-svg {
+  position: absolute;
+  right: 90px;
+  opacity: 0.3;
 }
 
 .input-date:hover {
@@ -785,7 +789,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px 10px;
+  padding: 16px 10px;
   border: none;
   cursor: pointer;
 }
@@ -1004,6 +1008,7 @@ body {
   width: 495px;
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -1247,7 +1252,7 @@ input::-webkit-inner-spin-button {
   background: #f2f2f2;
   border: none;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1269,7 +1274,7 @@ input::-webkit-inner-spin-button {
   transform: translateY(-50%);
   width: 20px;
   height: 24px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -1283,6 +1288,7 @@ input::-webkit-inner-spin-button {
   gap: 32px;
   border-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .range {
@@ -1298,6 +1304,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   width: 287px;
   height: 4px;
+  top: 6px;
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
@@ -1335,7 +1342,7 @@ input::-webkit-inner-spin-button {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -1px;
 }
 
 .filter-button {
@@ -1355,9 +1362,9 @@ input::-webkit-inner-spin-button {
 
 .button-apply {
   background: #82b3d3;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   border: none;
-
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1368,6 +1375,7 @@ input::-webkit-inner-spin-button {
   background: fixed;
   border-radius: 4px;
   border: solid 3px rgba(255, 255, 255, 0);
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1421,6 +1429,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-right: 40px;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -1506,6 +1515,7 @@ input::-webkit-inner-spin-button {
 
 .product-card-link {
   text-decoration: none;
+  height: 212px;
 }
 
 .product-card-title {
