@@ -318,6 +318,10 @@ body {
   color: #ffffff;
 }
 
+.advantages-item-foto {
+  width: calc(100% - 400px);
+}
+
 .advantages-item-foto img {
   height: 100%;
   width: 100%;
