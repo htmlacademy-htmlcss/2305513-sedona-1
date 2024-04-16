@@ -319,8 +319,8 @@ body {
 }
 
 .advantages-item-foto img {
-  display: flex;
-  align-self: stretch;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -1477,6 +1477,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
+  border: 2px solid #e5e5e5;
 }
 
 .sorting-button:default {
