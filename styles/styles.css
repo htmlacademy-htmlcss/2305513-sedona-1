@@ -1168,6 +1168,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.checkbox:focus + .control-title::before {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
 /* Радио */
 
 .control-radio {
@@ -1197,6 +1201,10 @@ body {
 .control-radio + .control-mark-radio {
   border-radius: 50%;
   margin-right: 16px;
+}
+
+.control-input:focus + .control-mark-radio::before {
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .control-input:checked + .control-mark-radio::before {
@@ -1335,11 +1343,11 @@ input::-webkit-inner-spin-button {
 }
 
 .range-toggle:focus {
-  border-radius: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
-  border-radius: 2px solid #83b3d3;
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1468,33 +1476,27 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   border-radius: 4px;
-  border: 2px solid #e5e5e5;
 }
 
 .sorting-button:default {
-  border-radius: 4px;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .sorting-button:hover {
-  border-radius: 4px;
   border: 2px solid #000000;
 }
 
 .sorting-button:focus {
-  border-radius: 4px;
-  border: 2px solid #68a2ca;
+  outline: 2px solid #68a2ca;
 }
 
 .sorting-button:active {
-  border-radius: 4px;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .sorting-button-active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .product-list {
@@ -1775,7 +1777,7 @@ input::-webkit-inner-spin-button {
 
 .pagination-item:focus {
   border-radius: 4px;
-  border: 1px solid #82b3d3;
+  outline: 1px solid #82b3d3;
   background: #68a2ca;
 }
 
@@ -1792,8 +1794,13 @@ input::-webkit-inner-spin-button {
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
+  display: flex;
   line-height: 36px;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+  width: 60px;
+  height: 60px;
 }
