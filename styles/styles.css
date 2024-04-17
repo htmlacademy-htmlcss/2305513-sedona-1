@@ -538,6 +538,15 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.field:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.field:focus:valid {
+  outline: 2px solid #000000;
+  border-radius: 4px;
+}
+
 .newsletter-button {
   font-size: 20px;
   font-weight: 700;
@@ -548,6 +557,10 @@ body {
   padding: 8px 50px;
   cursor: pointer;
   font-family: "PT Sans", sans-serif;
+}
+
+.newsletter-button:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .footer {
@@ -684,6 +697,10 @@ body {
   background-color: #e6e6e6;
 }
 
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .modal-close-button:active {
   opacity: 0.3;
 }
@@ -750,18 +767,22 @@ body {
   position: relative;
 }
 
-.input-date-svg {
-  position: absolute;
-  right: 90px;
-  opacity: 0.3;
-}
-
 .input-date:hover {
   background-color: #e6e6e6;
 }
 
-.input-date:active {
-  border: 2px solid #000000;
+.input-date:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.input-date:focus:valid {
+  outline: 3px solid #000000;
+}
+
+.input-date-svg {
+  position: absolute;
+  right: 90px;
+  opacity: 0.3;
 }
 
 .input-date-icon {
@@ -807,16 +828,18 @@ body {
   cursor: pointer;
 }
 
-.quantity-button:hover {
-  background-color: #e6e6e6;
+.quantity-button svg {
+  opacity: 0.3;
 }
 
-.quantity-button:active {
-  opacity: 0.3;
+.quantity-button svg:hover {
+  color: #000000;
+  opacity: 1;
 }
 
 .quantity-button svg:focus {
   color: #000000;
+  outline: 3px solid #82b3d3;
 }
 
 .quantity-button svg:active {
@@ -1285,6 +1308,14 @@ input[type="number"] {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.filter-price-boundaries input:focus:valid {
+  outline: 3px solid #000000;
+}
+
+.filter-price-boundaries input:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .price-boundaries-left input {
@@ -1819,4 +1850,8 @@ input[type="number"] {
   min-width: 60px;
   min-height: 60px;
   padding: 11px 10px;
+}
+
+.pagination-link:active {
+  opacity: 0.3;
 }
